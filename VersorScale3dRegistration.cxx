@@ -152,8 +152,6 @@ int main( int argc, char *argv[] )
     using InterpolatorType = itk:: LinearInterpolateImageFunction< MovingImageType, double >;
     using RegistrationType = itk::ImageRegistrationMethod< FixedImageType, MovingImageType >;
     MetricType::Pointer         metric        = MetricType::New();
-    const unsigned int numberOfSamples = static_cast< unsigned int >( 200000 ); //200000 muestras
-    metric->SetNumberOfSpatialSamples( numberOfSamples );
     OptimizerType::Pointer      optimizer     = OptimizerType::New();
     InterpolatorType::Pointer   interpolator  = InterpolatorType::New();
     RegistrationType::Pointer   registration  = RegistrationType::New();
