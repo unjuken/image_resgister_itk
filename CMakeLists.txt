@@ -10,11 +10,11 @@ if (ITKVtkGlue_LOADED)
   include(${VTK_USE_FILE})
 endif()
 
-add_executable(Versor3dResgistration Versor3dResgistration.cxx)
-target_link_libraries(Versor3dResgistration ${ITK_LIBRARIES})
+add_executable(Versor3dRegistration Versor3dRegistration.cxx)
+target_link_libraries(Versor3dRegistration ${ITK_LIBRARIES})
 
-add_executable(VersorScale3dResgistration VersorScale3dResgistration.cxx)
-target_link_libraries(VersorScale3dResgistration ${ITK_LIBRARIES})
+add_executable(VersorScale3dRegistration VersorScale3dRegistration.cxx)
+target_link_libraries(VersorScale3dRegistration ${ITK_LIBRARIES})
 
 add_executable(AffineRegistration AffineRegistration.cxx)
 target_link_libraries(AffineRegistration ${ITK_LIBRARIES})

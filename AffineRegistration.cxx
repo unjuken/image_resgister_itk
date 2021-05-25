@@ -246,8 +246,8 @@ main(int argc, char * argv[])
     //  Software Guide : EndLatex
 
     // Software Guide : BeginCodeSnippet
-    registration->SetInitialTransform(transform);
-    registration->InPlaceOn();
+    //registration->SetInitialTransform(transform);
+    //registration->InPlaceOn();
     // Software Guide : EndCodeSnippet
 
 
@@ -282,7 +282,7 @@ main(int argc, char * argv[])
     optimizerScales[4] = translationScale;
     optimizerScales[5] = translationScale;
 
-    optimizer->SetScales(optimizerScales);
+    //optimizer->SetScales(optimizerScales);
     // Software Guide : EndCodeSnippet
 
 

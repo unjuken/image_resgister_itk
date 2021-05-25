@@ -155,6 +155,8 @@ int main( int argc, char *argv[] )
     OptimizerType::Pointer      optimizer     = OptimizerType::New();
     InterpolatorType::Pointer   interpolator  = InterpolatorType::New();
     RegistrationType::Pointer   registration  = RegistrationType::New();
+    const unsigned int numberOfSamples = static_cast< unsigned int >( 200000 ); //200000 muestras
+    metric->SetNumberOfSpatialSamples( numberOfSamples );
     registration->SetMetric(        metric        );
     registration->SetOptimizer(     optimizer     );
     registration->SetInterpolator(  interpolator  );
